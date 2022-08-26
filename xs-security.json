@@ -1,0 +1,29 @@
+{
+    "xsappname": "app",
+    "tenant-mode": "dedicated",
+    "scopes": [
+      {
+        "name": "$XSAPPNAME.CatenaXUser",
+        "description": "CatenaXUser"
+      }
+    ],
+    "role-templates": [
+      {
+        "name": "CatenaXUser",
+        "description": "CatenaXUser",
+        "scope-references": [
+          "$XSAPPNAME.CatenaXUser"
+        ]
+      }
+    ],
+    "role-collections": [
+      {
+        "name": "app_CatenaXUser",
+        "description": "app CatenaXUser",
+        "role-template-references": [
+          "$XSAPPNAME.CatenaXUser"
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,6 @@
+ID,status,classification,severity,targetDate,receiveDate,senderBP,recieveBP
+101,sent,Quality Investigation,Life-Threatening,2022-12-10,2022-12-12,BPNL7588787849VQ,BPNL6666787765VQ
+102,recieved,Quality Investigation,critical,2022-12-10,2022-12-12,BPNL7588787849VQ,BPNL6666787765VQ
+103,accepted,Quality Alert,Major,2022-12-10,2022-12-12,BPNL7588787849VQ,BPNL6666787765VQ
+104,closed,Quality Alert,Major,2022-12-10,2022-12-12,BPNL7588787849VQ,BPNL6666787765VQ
+105,acknowledged,Quality Investigation,Minor,2022-12-10,2022-12-12,BPNL7588787849VQ,BPNL6666787765VQ
