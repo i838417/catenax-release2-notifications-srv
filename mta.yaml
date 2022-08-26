@@ -30,7 +30,7 @@ modules:
       memory: 256M
       disk-quota: 1024M
     requires:
-      - name: notifications-uaa
+      - name: app-uaa
       - name: notifications-db
 
   # --------------------- SERVER MODULE ------------------------
@@ -48,7 +48,7 @@ modules:
       memory: 512M
       disk-quota: 1024M
     requires:
-      - name: notifications-uaa
+      - name: app-uaa
       - name: notifications-db
     provides:
       - name: srv-api
@@ -72,7 +72,7 @@ modules:
       memory: 256M
       disk-quota: 1024M
     requires:
-      - name: notifications-uaa
+      - name: app-uaa
       - name: srv-api
         group: destinations
         properties:
@@ -84,7 +84,7 @@ modules:
 
 resources:
   # ----------------------- UAA SERVICE ------------------------
-  - name: notifications-uaa
+  - name: app-uaa
   # ------------------------------------------------------------
     type: org.cloudfoundry.managed-service
     parameters:
